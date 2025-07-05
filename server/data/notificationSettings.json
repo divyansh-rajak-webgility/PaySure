@@ -1,0 +1,45 @@
+{
+  "dueReminderDays": 5,
+  "overdueReminderDays": 1,
+  "maxOverdueReminders": 3,
+  "channels": {
+    "email": {
+      "enabled": true,
+      "fromEmail": "payments@yourstore.com",
+      "fromName": "Payment Collection Assistant"
+    },
+    "whatsapp": {
+      "enabled": true,
+      "phoneNumber": "+1234567890"
+    }
+  },
+  "templates": {
+    "email": {
+      "dueReminder": {
+        "subject": "Payment Reminder - Order {{order_number}}",
+        "body": "Hi {{customer_name}},\n\nThis is a friendly reminder that your payment of {{amount_due}} for order {{order_number}} is due on {{due_date}}.\n\nPlease complete your payment to avoid any delays in processing your order.\n\nPayment Link: {{payment_link}}\n\nIf you have any questions, please don't hesitate to contact us.\n\nBest regards,\n{{store_name}} Team"
+      },
+      "overdueReminder": {
+        "subject": "Payment Overdue - Order {{order_number}}",
+        "body": "Hi {{customer_name}},\n\nYour payment of {{amount_due}} for order {{order_number}} was due on {{due_date}} and is now overdue.\n\nPlease complete your payment as soon as possible to avoid any additional charges or delays.\n\nPayment Link: {{payment_link}}\n\nIf you're experiencing any issues, please contact us immediately.\n\nBest regards,\n{{store_name}} Team"
+      }
+    },
+    "whatsapp": {
+      "dueReminder": "Hi {{customer_name}}, your payment of {{amount_due}} for order {{order_number}} is due on {{due_date}}. Please complete your payment to avoid delays. Payment link: {{payment_link}}",
+      "overdueReminder": "Hi {{customer_name}}, your payment of {{amount_due}} for order {{order_number}} is overdue (due: {{due_date}}). Please complete payment immediately. Payment link: {{payment_link}}"
+    }
+  },
+  "aiSettings": {
+    "enabled": true,
+    "tone": "friendly",
+    "availableTones": ["friendly", "assertive", "legal"],
+    "customizeMessage": true
+  },
+  "scheduling": {
+    "timezone": "America/New_York",
+    "sendTime": "09:00",
+    "maxPerHour": 50,
+    "retryFailed": true,
+    "retryAttempts": 3
+  }
+} 

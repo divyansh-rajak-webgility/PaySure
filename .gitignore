@@ -1,0 +1,208 @@
+# Payment Collection Assistant - Git Ignore
+
+# ===== DEPENDENCIES =====
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ===== ENVIRONMENT VARIABLES =====
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging
+
+# ===== BUILD OUTPUTS =====
+# React build
+client/build/
+client/dist/
+
+# Server build
+server/dist/
+server/build/
+
+# ===== LOGS =====
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ===== DATA FILES =====
+# Database files (if using local databases)
+*.db
+*.sqlite
+*.sqlite3
+
+# Data files (consider if you want to track these)
+# server/data/orders.json
+# server/data/notificationSettings.json
+# server/data/reminders.json
+# server/data/settings.json
+
+# ===== IDE & EDITOR FILES =====
+# VS Code
+.vscode/
+*.code-workspace
+
+# WebStorm/IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===== OS GENERATED FILES =====
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+
+# ===== TESTING =====
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# ===== TEMPORARY FILES =====
+# Temporary folders
+tmp/
+temp/
+.tmp/
+.temp/
+
+# ===== CACHE =====
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+
+# ===== BACKUP FILES =====
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# ===== SSL CERTIFICATES =====
+# SSL certificates (if using local HTTPS)
+*.pem
+*.key
+*.crt
+*.csr
+
+# ===== DOCKER =====
+# Docker files (if using containers)
+.dockerignore
+docker-compose.override.yml
+
+# ===== MONOREPO =====
+# Lerna
+lerna-debug.log*
+
+# ===== SPECIFIC TO THIS PROJECT =====
+# Mock data files (uncomment if you don't want to track them)
+# server/data/*.json
+
+# Notification logs (if stored as files)
+# server/logs/
+
+# Upload directories
+uploads/
+public/uploads/
+
+# ===== DEVELOPMENT TOOLS =====
+# Local development tools
+.local/
+.localhost/
+
+# ===== PERFORMANCE =====
+# Performance monitoring
+.0x/
+
+# ===== SECURITY =====
+# Security files
+.secrets
+.secret
+*.secret
+
+# ===== MISC =====
+# Misc files
+*.tgz
+*.tar.gz
+*.zip
+*.rar
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ===== PROJECT SPECIFIC =====
+# Payment Collection Assistant specific
+# Uncomment the following lines if you want to exclude data files from version control
+# server/data/orders.json
+# server/data/notificationSettings.json
+# server/data/reminders.json
+# server/data/settings.json
+
+# Keep the data directory structure but ignore specific files if needed
+# server/data/*.json
+# !server/data/sample-*.json 

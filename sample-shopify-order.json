@@ -1,0 +1,72 @@
+{
+  "id": 1001,
+  "order_number": "#1001",
+  "name": "#1001",
+  "email": "customer@example.com",
+  "phone": "+1234567890",
+  "fulfillment_status": "unfulfilled",
+  "financial_status": "pending",
+  "total_price": "299.99",
+  "subtotal_price": "249.99",
+  "total_tax": "25.00",
+  "total_discounts": "0.00",
+  "currency": "USD",
+  "created_at": "2024-01-15T10:30:00Z",
+  "updated_at": "2024-01-15T10:30:00Z",
+  "processed_at": "2024-01-15T10:30:00Z",
+  "note": "Please deliver to front door",
+  "line_items": [
+    {
+      "id": 2001,
+      "product_id": 3001,
+      "variant_id": 4001,
+      "title": "Premium Wireless Headphones",
+      "variant_title": "Black",
+      "sku": "WH-001-BLK",
+      "quantity": 1,
+      "price": "199.99",
+      "total_discount": "0.00",
+      "taxable": true,
+      "gift_card": false,
+      "properties": null
+    },
+    {
+      "id": 2002,
+      "product_id": 3002,
+      "variant_id": 4002,
+      "title": "Bluetooth Speaker",
+      "variant_title": "Portable",
+      "sku": "BS-002-PORT",
+      "quantity": 1,
+      "price": "50.00",
+      "total_discount": "0.00",
+      "taxable": true,
+      "gift_card": false,
+      "properties": null
+    }
+  ],
+  "tax_lines": [
+    {
+      "title": "State Tax",
+      "price": "25.00",
+      "rate": 0.10,
+      "rate_percentage": 10.0
+    }
+  ],
+  "fulfillments": [],
+  "billing_address": {
+    "first_name": "John",
+    "last_name": "Doe",
+    "company": "Acme Corp",
+    "address1": "123 Main Street",
+    "address2": "Apt 4B",
+    "city": "New York",
+    "province": "New York",
+    "country": "United States",
+    "zip": "10001",
+    "phone": "+1234567890",
+    "name": "John Doe",
+    "country_code": "US",
+    "province_code": "NY"
+  }
+} 
